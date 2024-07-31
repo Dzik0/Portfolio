@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(240, 228, 181);
+    padding: 2%;
+    font-family: Young Serif;
+    font-family: Outfit;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-full {
+    width: 100%;
+    max-width: 1000px;
+}
+
+img {
+    width: 100%;
+    border-radius: 50px;
+    padding: 40px;
+}
+
+.page {
+    background-color: white;
+    padding: 40px;
+    border-radius: 0 0 15px 15px;
+    margin-top: 0;
+}
+
+.omlet {
+    margin-bottom: -50px;
+    background-color: white;
+    border-radius: 15px 15px 0 0;
+}
+
+.prep {
+    background-color: rgba(253, 213, 233, 0.308);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-family: Young Serif;
+}
+
+ul {
+    margin-top: 0;
+}
+
+li {
+    padding-left: 15px;
+    padding-bottom: 10px;
+}
+h3 {
+    margin-bottom: 20px;
+    margin-left: 20px;
+    color: rgb(113, 0, 0);
+}
+
+.bold {
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.7rem;
+    color: rgb(132, 1, 1);
+    font-family: Young Serif;
+}
+
+.ul2 {
+    margin-left: 0;
+    padding-left: 20px;
+}
+
+.ul2 > * {
+    margin-bottom: 10px;
+}
+
+.hr1 {
+    opacity: 0.3;
+}
+
+ol {
+    margin-left: 0;
+    padding-left: 20px;
+}
+
+ol > * {
+    margin-bottom: 8px;
+} 
+
+ol > li::marker {
+    color: rgb(132, 1, 1);
+    font-weight: bold;
+}
+
+table, th, td {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.135);
+    border-collapse: collapse;
+}
+table {
+    width: 100%;
+}
+
+.redspan {
+    color: rgb(132, 1, 1);
+    font-weight: bold;
+}
+
+p.nut {
+    margin-bottom: 30px;
+}
+
+.name-food {
+    text-align: left;
+}
+
+.amount-food {
+    text-align: right;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 0%;
+        margin: 0;
+    }
+
+    img {
+    width: 100%;
+    border-radius: 0;
+    padding: 0;
+}
+
+    .omlet {
+        margin-bottom: -40px;
+        background-color: white;
+        border-radius: 15px 15px 0 0;
+    }
+}
+
+.last-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+  
+  .back-btn {
+    padding: 10px 20px;
+    background-color: white;
+    border: 2px solid rgb(106, 190, 205);
+  }
+  
+  .back-btn:hover {
+    background-color: rgb(106, 190, 205);
+    cursor: pointer;
+  }

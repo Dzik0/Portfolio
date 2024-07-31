@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- META -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Piotr Głazowski">
+  <meta name="description" content="This is a page with all Frontend Challenges done by Piotr Głazowski">
+  <meta name="keywords" content="html css js challenges frontend">
+  <!--TITLE + ICON-->
+  <title>Frontend Challenges Portfolio - Piotr Głazowski</title>
+  <link rel="icon" sizes="32x32" type="image/png" href="Images/wolf.png">
+  <!-- STYLES -->
+   <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div class="container">
+    <div class="top-container">
+      <div class="photo-container">
+        <img src="Images/IMG_1827.jpg" alt="Photo of me and Luna" class="profile-photo">
+      </div>
+      <img src="Images/Frontend-img.png" alt="Frontend Mentor Logo" class="frontend-logo">
+    </div>
+
+    <div class="bottom-container">
+      <h1>Frontend Challenges</h1>
+    </div>
+
+    <div class="buttons-container">
+      <button onclick="goPage('newbie');" class="newbie">Newbie</button>
+      <button onclick="goPage('junior');" class="junior">Junior</button>
+      <button onclick="goPage('inter');" class="inter">Intermediate</button>
+      <button onclick="goPage('adv');" class="advanced">Advanced</button>
+    </div>
+  </div>
+
+<script>
+function goPage (page) {
+  if (page === 'newbie') {
+    window.location.href = 'Challenges/Newbie/index.html';
+  } else {
+    alert('Coming soon!');
+  }
+}
+</script>
+</body>
+</html>

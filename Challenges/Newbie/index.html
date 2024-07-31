@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- META -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Piotr Głazowski">
+  <meta name="description" content="This is a page with all Frontend Challenges done by Piotr Głazowski">
+  <meta name="keywords" content="html css js challenges frontend">
+  <!--TITLE + ICON-->
+  <title>Frontend Challenges Portfolio - Piotr Głazowski</title>
+  <link rel="icon" sizes="32x32" type="image/png" href="Images/wolf.png">
+  <!-- STYLES -->
+   <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div class="container">
+    <div class="top-container">
+      <div class="photo-container">
+        <img src="./Images/IMG_2.jpg" alt="Photo of me and Luna" class="profile-photo">
+      </div>
+      <img src="./Images/Frontend-img.png" alt="Frontend Mentor Logo" class="frontend-logo">
+    </div>
+
+    <div class="bottom-container">
+      <h1>Newbie Challenges</h1>
+    </div>
+
+    <div class="buttons-container">
+      <button onclick="goPage('recipe');" class="recipe">Recipe Main Page</button>
+      <button onclick="goPage('social');" class="newbie social">Social links profile</button>
+      <button onclick="goPage('blog');" class="newbie blog">Blog preview card</button>
+      <button onclick="goPage('faq');" class="newbie faq">FAQ accordion</button>
+      <button onclick="goPage('workit');" class="newbie workit">Workit landing page</button>
+      <button onclick="goPage('results');" class="newbie results">Results summary component</button>
+    </div>
+
+    <div class="last-div">
+      <button onclick="goPage('back')" class="back-btn">Go back</button>
+    </div>
+  </div>
+
+
+<script>
+  function goPage (page) {
+    if (page === 'back') {
+      window.location.href = '/Portfolio';
+    } else if (page === 'recipe') {
+      window.location.href = './Recipe-Page';
+    } else if (page === 'social') {
+      window.location.href = './Social-links-profile';
+    } else if (page === 'blog') {
+      window.location.href = './Blog-preview';
+    } else if (page === 'faq') {
+      window.location.href = './FAQ-accordion';
+    } else if (page === 'workit') {
+      window.location.href = './Workit-landing-page';
+    } else if (page === 'results') {
+      window.location.href = './Result-summary';
+    }
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- meta things -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Page about social links">
+    <meta name="author" content="Piotr Głazowski">
+    <!-- Title and Logo -->
+    <title>Social links Profile - Frontend Mentor</title>
+    <link rel="icon" href="assets/images/favicon-32x32.png" type="img/png" sizes="32x32">
+    <!-- Stylesheets and fonts -->
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <div class="photo__container">
+            <img class="photo__img" src="assets/images/avatar-jessica.jpeg" alt="Profie picture">
+        </div>
+        <div class="name">
+            Jessica Randall
+        </div>
+        <div class="location">
+            London, United Kingdom
+        </div>
+        <div class="info">
+            "Front-end developer and avid reader."
+        </div>
+    <div class="btn__container">
+        <button>GitHub</button>
+        <button>Frontend Mentor</button>
+        <button>LinkedIn</button>
+        <button>Twitter</button>
+        <button>Instagram</button>
+    </div>
+    </div>
+  
+
+<footer>
+    <div>Site created by Piotr Głazowski</div>
+</footer>
+<div class="last-div">
+    <button onclick="goPage('back')" class="back-btn">Go back</button>
+</div>
+
+  <script>
+    function goPage (page) {
+    if (page === 'back') {
+        window.location.href = '/Challenges/Newbie';
+    }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="main.css" type="text/css">
+  
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; margin-top: 10px;}
+    .attribution a { color: hsl(228, 45%, 44%);}
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="left-container">
+      <div class="left-title">
+        Your Result
+      </div>
+      <div class="score-circle">
+        <div class="main-score">
+          76
+        </div>
+        <div class="rest-score">
+          of 100
+        </div>
+      </div>
+      <div class="left-result">
+        Great
+      </div>
+      <div class="left-info-score">
+         You scored higher than 65% of the people who have taken these tests.
+      </div>
+    </div>
+    <div class="right-container">
+      <div class="right-title">
+        Summary
+      </div>
+      <div class="skills-container">
+        <div class="box-container reaction">
+          <div class="left-side-box">
+            <img src="assets/images/icon-reaction.svg" alt="icon" class="skill-icon">
+            <div class="skill-name">Reaction</div>
+          </div>
+          <div class="right-side-box">
+            <div class="skill-points"><span class="black-span">80</span><span class="grey-span"> / 100</span></div>
+          </div>
+        </div>
+
+        <div class="box-container memory">
+          <div class="left-side-box">
+            <img src="assets/images/icon-memory.svg" alt="icon" class="skill-icon">
+            <div class="skill-name">Memory</div>
+          </div>
+          <div class="right-side-box">
+            <div class="skill-points"><span class="black-span">92</span><span class="grey-span"> / 100</span></div>
+          </div>
+        </div>
+
+        <div class="box-container verbal">
+          <div class="left-side-box">
+            <img src="assets/images/icon-verbal.svg" alt="icon" class="skill-icon">
+            <div class="skill-name">Verbal</div>
+          </div>
+          <div class="right-side-box">
+            <div class="skill-points"><span class="black-span">61</span><span class="grey-span"> / 100</span></div>
+          </div>
+        </div>
+
+        <div class="box-container visual">
+          <div class="left-side-box">
+            <img src="assets/images/icon-visual.svg" alt="icon" class="skill-icon">
+            <div class="skill-name">Visual</div>
+          </div>
+          <div class="right-side-box">
+            <div class="skill-points"><span class="black-span">73</span><span class="grey-span"> / 100</span></div>
+          </div>
+        </div>
+        <button>Continue</button>
+      </div>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Piotr Głazowski</a>.
+  </div>
+  <div class="last-div">
+    <button onclick="goPage('back')" class="back-btn">Go back</button>
+</div>
+
+  <script>
+    function goPage (page) {
+    if (page === 'back') {
+        window.location.href = '/Challenges/Newbie';
+    }
+    }
+  </script>
+</body>
+</html>

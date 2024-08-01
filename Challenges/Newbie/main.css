@@ -111,6 +111,9 @@ button:hover {
 .results:hover {
   background-image: url('./Images/results.png');
 }
+.product-preview:hover {
+  background-image: url('./Images/perfume1.jpg');
+}
 
 .last-div {
   display: flex;

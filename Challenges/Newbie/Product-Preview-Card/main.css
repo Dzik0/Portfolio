@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F2EAE2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10%;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 650px;
+  background-color: white;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.left-side {
+  flex: 50%;
+}
+
+.product-photo {
+  height: 450px;
+  display: block;
+  object-fit: cover;
+}
+
+.right-side {
+  flex: 50%;
+  padding: 30px;
+}
+
+.item-type {
+  font-family: Montserrat;
+  font-size: 12px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #6C7289;
+  margin-bottom: 25px;
+}
+
+.item-name {
+  font-family: Fraunces;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+  margin-bottom: 30px;
+}
+
+.item-description {
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 23px;
+  color: #6C7289;
+  margin-bottom: 25px;
+}
+
+.price-container {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 25px;
+}
+
+.current-price {
+  font-family: Fraunces;
+  font-size: 32px;
+  color: #3D8168;
+  font-weight: 700;
+}
+
+.discount-price {
+  font-family: Montserrat;
+  font-size: 13px;
+  color: #6C7289;
+  text-decoration: line-through;
+}
+
+.cart-button {
+  font-family: Montserrat;
+  font-weight: 600;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #3D8168;
+  border: none;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.cart-icon {
+  width: 15px;
+}
+
+.cart-button:hover {
+  background-color: #1A4032;
+}
+
+@media (max-width: 450px) {
+  body {
+    flex-direction: column;
+    padding-top: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .product-photo {
+    height: 240px;
+    border-radius: 10px 10px 0 0;
+  }
+}
+
+.back-btn {
+  font-family: Montserrat;
+  font-weight: 600;
+  width: 100px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #3D8168;
+  border: none;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  cursor: pointer;
+  margin-top: 50px;
+}
+
+.back-btn:hover {
+  background-color: #1A4032;
+}

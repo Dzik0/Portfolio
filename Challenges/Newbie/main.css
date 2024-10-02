@@ -84,7 +84,7 @@ button:hover {
   color: rgb(0, 81, 95);
   padding: 5%;
   cursor: pointer;
-  transition: 0;
+  transition: 0.8s;
 }
 
 .recipe:hover {

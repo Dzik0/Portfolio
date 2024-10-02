@@ -84,7 +84,7 @@ button:hover {
   color: rgb(0, 81, 95);
   padding: 5%;
   cursor: pointer;
-  transition: 0.8s;
+  transition: 0;
 }
 
 .recipe:hover {
@@ -117,6 +117,34 @@ button:hover {
 
 .skilled-elearning:hover {
   background-image: url('./Images/skilled-elearning.png');
+}
+
+.rating-component:hover {
+  background-image: url(./Images/rating-component.png);
+}
+
+.qr-code:hover {
+  background-image: url(./Images/qr-code-component.png);
+}
+
+.nft-preview:hover {
+  background-image: url(./Images/nft-card.png);
+}
+
+.equalizer-landing:hover {
+  background-image: url(./Images/equalizer-page.png);
+}
+
+.order-summary:hover {
+  background-image: url(./Images/order-summary.png);
+}
+
+.stats-preview:hover {
+  background-image: url('./Images/stats-preview-card.png');
+}
+
+.meet-landing:hover {
+  background-image: url('./Images/meet-page.png');
 }
 
 .last-div {

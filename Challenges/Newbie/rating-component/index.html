@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="main.css" type="text/css">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+</head>
+<body>
+  <!-- FIRST SLIDE -->
+  <div class="main-container js-main-container">
+    <div class="top-star">
+      <img src="images/icon-star.svg" alt="star" class="star-img">
+    </div>
+    <div class="title">
+      How did we do?
+    </div>
+    <div class="info">
+      Please let us know how we did with your support request. All feedback is appreciated 
+      to help us improve our offering!
+    </div>
+    <div class="btn-container">
+      <button onclick="checkBTN('one');" class="btn-number js-btn-rate-one">1</button>
+      <button onclick="checkBTN('two');" class="btn-number js-btn-rate-two">2</button>
+      <button onclick="checkBTN('three');" class="btn-number js-btn-rate-three">3</button>
+      <button onclick="checkBTN('four');" class="btn-number js-btn-rate-four">4</button>
+      <button onclick="checkBTN('five');" class="btn-number js-btn-rate-five">5</button>
+    </div>
+    <div class="sub-btn-container">
+      <button class="submit-btn" onclick="vote();">SUBMIT</button>
+    </div>
+  </div>
+
+  <!-- 2nd PAGE -->
+  <div class="main-container-backpage js-backpage">
+    <div class="thankyou-img">
+      <img src="images/illustration-thank-you.svg" alt="thankyou" class="thank-you-img">
+    </div>
+    <div class="score js-score">
+      You selected 1 out of 5
+    </div>
+    <div class="thank-you">
+      Thank you!
+    </div>
+    <div class="second-info">
+      We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Piotr Głazowski</a>.
+  </div>
+
+  <script>
+    
+/*     function checkBTN (num) {
+      const btnElement = document.querySelector(`.js-btn-rate-${num}`);
+
+      if (btnElement.classList.contains('toggle')) {
+        btnElement.classList.remove('toggle');
+      } else {
+        btnElement.classList.add('toggle');
+      }
+
+    } */
+
+    function checkBTN (num) {
+     const btnElementOne = document.querySelector('.js-btn-rate-one');
+     const btnElementTwo = document.querySelector('.js-btn-rate-two');
+     const btnElementThree = document.querySelector('.js-btn-rate-three');
+     const btnElementFour = document.querySelector('.js-btn-rate-four');
+     const btnElementFive = document.querySelector('.js-btn-rate-five');
+     const scoreElement = document.querySelector('.js-score');
+
+      if (num === 'one') {
+        btnElementOne.classList.add('toggle');
+        btnElementTwo.classList.remove('toggle');
+        btnElementThree.classList.remove('toggle');
+        btnElementFour.classList.remove('toggle');
+        btnElementFive.classList.remove('toggle');
+        scoreElement.innerHTML = `You selected 1 out of 5`;
+      } else if (num === 'two') {
+        btnElementTwo.classList.add('toggle');
+        btnElementOne.classList.remove('toggle');
+        btnElementThree.classList.remove('toggle');
+        btnElementFour.classList.remove('toggle');
+        btnElementFive.classList.remove('toggle');
+        scoreElement.innerHTML = `You selected 2 out of 5`;
+      } else if (num === 'three') {
+        btnElementThree.classList.add('toggle');
+        btnElementTwo.classList.remove('toggle');
+        btnElementOne.classList.remove('toggle');
+        btnElementFour.classList.remove('toggle');
+        btnElementFive.classList.remove('toggle');
+        scoreElement.innerHTML = `You selected 3 out of 5`;
+      } else if (num === 'four') {
+        btnElementFour.classList.add('toggle');
+        btnElementTwo.classList.remove('toggle');
+        btnElementThree.classList.remove('toggle');
+        btnElementOne.classList.remove('toggle');
+        btnElementFive.classList.remove('toggle');
+        scoreElement.innerHTML = `You selected 4 out of 5`;
+      } else if (num === 'five') {
+        btnElementFive.classList.add('toggle');
+        btnElementTwo.classList.remove('toggle');
+        btnElementThree.classList.remove('toggle');
+        btnElementFour.classList.remove('toggle');
+        btnElementOne.classList.remove('toggle');
+        scoreElement.innerHTML = `You selected 5 out of 5`;
+      }
+    }
+
+    function vote () {
+      const mainElement = document.querySelector('.js-main-container');
+      const secondElement = document.querySelector('.js-backpage');
+
+      mainElement.classList.add('hidden');
+      secondElement.classList.add('shown');
+
+    
+    }
+  </script>
+</body>
+</html>

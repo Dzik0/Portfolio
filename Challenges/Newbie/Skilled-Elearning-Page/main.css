@@ -213,6 +213,10 @@ footer {
   cursor: pointer;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 @media (min-width: 700px) {
   .main-container {
     padding-left: 40px;

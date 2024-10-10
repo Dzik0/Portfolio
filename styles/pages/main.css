@@ -1,0 +1,198 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Verdana;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+  min-height: 100vh;
+  background-color: hsl(0, 0%, 90%);
+}
+
+.container {
+  background-color: hotpink;
+  width: 100%;
+  padding: 2rem;
+  max-width: 1200px;
+  background-color: white;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.384);
+  border-radius: 10px;
+}
+
+img {
+  width: 100%;
+}
+
+.frontend-logo {
+  width: 70%;
+  display: block;
+  border-radius: 15px;
+}
+
+.profile-photo {
+  display: block;
+}
+
+.top-container {
+  display: flex;
+  align-items: center;
+  gap: 2%;
+  margin-bottom: 40px;
+}
+
+.photo-container {
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+h1 {
+  text-align: center;
+}
+
+.buttons-container {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+button {
+  padding: 5%;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1.2rem;
+  /* font-family: Helvetica; */
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.newbie {
+  background-color: rgb(106, 190, 205);
+}
+
+.junior {
+  background-color: rgb(170, 215, 66);
+}
+
+.intermediate {
+  background-color: rgb(241, 182, 4);
+}
+
+.advanced {
+  background-color: rgb(244, 137, 37);
+}
+
+.newbie:hover {
+  background-color: white;
+  border: 2px solid rgb(106, 190, 205);
+  color: rgb(106, 190, 205);
+  padding: 0%;
+  cursor: pointer;
+}
+
+.junior:hover {
+  background-color: white;
+  border: 2px solid rgb(170, 215, 66);
+  color: rgb(170, 215, 66);
+  padding: 0%;
+}
+
+.intermediate:hover {
+  background-color: white;
+  border: 2px solid rgb(241, 182, 4);
+  color: rgb(241, 182, 4);
+  padding: 0%;
+}
+
+.advanced:hover {
+  background-color: white;
+  border: 2px solid rgb(244, 137, 37);
+  color: rgb(244, 137, 37);
+  padding: 0%;
+}
+
+@media (max-width: 700px) {
+ body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+  min-height: 0vh;
+  background-color: hsl(0, 0%, 90%);
+}
+
+.container {
+  background-color: hotpink;
+  width: 100%;
+  padding: 1rem;
+  max-width: 1000px;
+  background-color: hsl(0, 0%, 90%);
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.384);
+  border-radius: 10px;
+}
+
+.top-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2%;
+  margin-bottom: 40px;
+}
+
+.photo-container {
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.frontend-logo {
+  width: 100%;
+  margin-bottom: 0px;
+}
+
+.buttons-container {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.newbie:hover {
+  background-color: white;
+  border: 2px solid rgb(106, 190, 205);
+  color: rgb(106, 190, 205);
+  padding: 5%;
+}
+
+.junior:hover {
+  background-color: white;
+  border: 2px solid rgb(170, 215, 66);
+  color: rgb(170, 215, 66);
+  padding: 5%;
+  cursor: pointer;
+}
+
+.inter:hover {
+  background-color: white;
+  border: 2px solid rgb(241, 182, 4);
+  color: rgb(241, 182, 4);
+  padding: 5%;
+}
+
+.advanced:hover {
+  background-color: white;
+  border: 2px solid rgb(244, 137, 37);
+  color: rgb(244, 137, 37);
+  padding: 5%;
+}
+
+}

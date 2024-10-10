@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Manrope:wght@200..800&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #FFFFFF;
+  margin: 0 auto;
+  padding: 0;
+  padding: 5%;
+  padding-top: 10%;
+  position: relative;
+  overflow-x: hidden;
+  font-family: Manrope;
+}
+
+img {
+  width: 100%;
+}
+
+.pattern-left {
+  display: none;
+}
+
+.pattern-right {
+  display: none;
+}
+
+.pattern-last {
+  display: none;
+}
+
+.purple-circle {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  top: -200px;
+  left: -400px;
+  right: -400px;
+  background-color: #24053E;
+  height: 30%;
+  border-radius: 100%;
+  z-index: -1;
+}
+
+.grey-circle {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  top: -100px;
+  left: -600px;
+  right: -600px;
+  background-color: #FCF8FF;
+  height: 68%;
+  max-height: 1850px;
+  border-radius: 100%;
+  z-index: -2;
+}
+
+.top {
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.right-top {
+  text-decoration: 3px underline #44FFA1;
+  text-underline-offset: 8px;
+  font-family: Manrope;
+  margin-top: -10px;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.right-top:hover {
+  color: #44FFA1;
+  cursor: pointer;
+}
+
+.mid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  text-wrap: wrap;
+  line-height: 3rem;
+  color: white;
+  font-family: Fraunces;
+  font-weight: 500;
+}
+
+.underline {
+  text-decoration: 3px underline #44FFA1;
+  text-underline-offset: 6px;
+}
+
+.learn-btn {
+  padding: 15px 30px;
+  background-color: #44FFA1;
+  border: none;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 50px;
+  color: #24053E;
+}
+
+.learn-btn:hover {
+  border: 1px solid #44FFA1;
+  background-color: #24053E;
+  padding: 14px 29px;
+  color: #44FFA1;
+  cursor: pointer;
+}
+
+.hero-photo {
+  max-width: 1000px;
+}
+
+.all-points {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.point {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  color: #24053E;
+}
+
+.point-number {
+  width: 60px;
+  height: 60px;
+  border: 1px solid rgb(90, 90, 90);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Fraunces;
+  margin-bottom: 30px;
+}
+
+.point-title {
+  margin-bottom: 20px;
+  font-family: Fraunces;
+  font-weight: 600;
+  font-size: 1.7rem;
+}
+
+.point-info {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.bottom {
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.profile-photo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.profile-photo {
+  width: 80%;
+}
+
+.profile-info {
+  margin-top: -45px;
+  background-color: #24053E;
+  padding: 8% 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: Fraunces;
+}
+
+.profile-text {
+  line-height: 1.8rem;
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 50px;
+  font-weight: 300;
+  text-wrap: wrap;
+}
+
+.apply-btn {
+  padding: 15px 30px;
+  background-color: #44FFA1;
+  border: none;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #24053E;
+}
+
+.apply-btn:hover {
+  border: 1px solid #44FFA1;
+  background-color: #24053E;
+  padding: 14px 29px;
+  color: #44FFA1;
+  cursor: pointer;
+}
+
+.bottom-logo {
+  margin-top: 70px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.last-logo {
+  width: 30%;
+  max-width: 100px;
+}
+
+.logos-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  margin-bottom: 50px;
+}
+
+.small-logo {
+  width: 6%;
+  max-width: 20px;
+}
+
+
+
+@media (min-width: 900px) {
+  .pattern-left {
+    display: block;
+    position: absolute;
+    width: 400px;
+    left: -200px;
+  }
+
+  .pattern-right {
+    display: block;
+    position: absolute;
+    width: 250px;
+    top: 200px;
+    right: -150px;
+  }
+
+  h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+
+  .bottom {
+    margin-top: 200px;
+    display: block;
+    color: white;
+    position: relative;
+    margin-bottom: 350px;
+  }
+  
+  .profile-photo-container {
+    display: block;
+  
+  }
+  
+  .profile-photo {
+    width: 40%;
+    max-width: 467px;
+  }
+  
+  .profile-info {
+    position: absolute;
+    top: 250px;
+    left: 250px;
+    width: 70%;
+    margin-top: 0;
+    background-color: #24053E;
+    padding: 8% 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .profile-text {
+    text-align: left;
+  }
+
+  .helper {
+    position: relative;
+  }
+
+  .pattern-last {
+    display: block;
+    position: absolute;
+    width: 200px;
+    right: 4%;
+    bottom: -90px;
+    z-index: 2;
+  }
+}
+
+@media (min-width: 1400px) {
+  body {
+    padding: 3% 25%;
+  }
+
+  h1 {
+    font-size: 5rem;
+    line-height: 5rem;
+  }
+
+  .grey-circle {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    top: -200px;
+    left: -600px;
+    right: -600px;
+    background-color: #FCF8FF;
+    height: 64%;
+    max-height: 1850px;
+    border-radius: 100%;
+    z-index: -2;
+  }
+  
+  .learn-btn {
+    margin-bottom: 80px;
+  }
+
+  .mid-photo {
+    margin-bottom: 70px;
+  }
+
+  .profile-photo {
+    width: 50%;
+  }
+
+  .profile-info {
+    position: absolute;
+    top: 250px;
+    left: 300px;
+    margin-top: 0;
+    background-color: #24053E;
+    padding: 8% 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .profile-text {
+    text-align: left;
+    margin-bottom: 50px;
+  }
+
+  .all-points {
+    flex-direction: row;
+  }
+
+  .logos-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    margin-bottom: 10px;
+  }
+
+  .profile-title {
+    font-size: 3rem;
+  }
+
+}
+
+.last-div {
+  margin-top: 50px;
+  text-align: center;
+}
+
+button:hover {
+  cursor: pointer;
+}

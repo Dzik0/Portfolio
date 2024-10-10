@@ -9,39 +9,28 @@
   <meta name="keywords" content="html css js challenges frontend">
   <!--TITLE + ICON-->
   <title>Frontend Challenges Portfolio - Piotr Głazowski</title>
-  <link rel="icon" sizes="32x32" type="image/png" href="Images/wolf.png">
+  <link rel="icon" sizes="32x32" type="image/png" href="Images/main/wolf.png">
   <!-- STYLES -->
-   <link rel="stylesheet" href="main.css">
+   <link rel="stylesheet" href="styles/pages/main.css">
 </head>
 <body>
   <div class="container">
     <div class="top-container">
       <div class="photo-container">
-        <img src="Images/IMG_1827.jpg" alt="Photo of me and Luna" class="profile-photo">
+        <img src="Images/main/IMG_1827.jpg" alt="Photo of me and Luna" class="profile-photo">
       </div>
-      <img src="Images/Frontend-img.png" alt="Frontend Mentor Logo" class="frontend-logo">
+      <img src="Images/main/Frontend-img.png" class="frontend-logo">
     </div>
 
     <div class="bottom-container">
       <h1>Frontend Challenges</h1>
     </div>
 
-    <div class="buttons-container">
-      <button onclick="goPage('newbie');" class="newbie">Newbie</button>
-      <button onclick="goPage('junior');" class="junior">Junior</button>
-      <button onclick="goPage('inter');" class="inter">Intermediate</button>
-      <button onclick="goPage('adv');" class="advanced">Advanced</button>
+    <div class="buttons-container btn-container-js">
+      
     </div>
   </div>
 
-<script>
-function goPage (page) {
-  if (page === 'newbie') {
-    window.location.href = 'Challenges/Newbie/index.html';
-  } else {
-    alert('Coming soon!');
-  }
-}
-</script>
+<script type="module" src="scripts/main.js"></script>
 </body>
 </html>

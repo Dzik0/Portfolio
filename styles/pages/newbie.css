@@ -88,63 +88,64 @@ button:hover {
 }
 
 .recipe:hover {
-  background-image: url('./Images/image-omelette.jpeg');
+  background-image: url('/Images/Newbie/Courses/recipe.jpeg');
 }
 
 .social:hover {
-  background-image: url('./Images/Profile-link.png');
+  background-image: url('/Images/Newbie/Courses/Profile-link.png');
   background-position: center;
 }
 
 .blog:hover {
-  background-image: url('./Images/Blog-preview.png');
+  background-image: url('/Images/Newbie/Courses/Blog-preview.png');
 }
 
 .faq:hover {
-  background-image: url('./Images/faq.png');
+  background-image: url('/Images/Newbie/Courses/faq.png');
 }
 
 .workit:hover {
-  background-image: url('./Images/workit.png');
+  background-image: url('/Images/Newbie/Courses/workit.png');
 }
 
 .results:hover {
-  background-image: url('./Images/results.png');
+  background-image: url('/Images/Newbie/Courses/results.png');
 }
+
 .product-preview:hover {
-  background-image: url('./Images/perfume1.jpg');
+  background-image: url('/Images/Newbie/Courses/perfume1.jpg');
 }
 
 .skilled-elearning:hover {
-  background-image: url('./Images/skilled-elearning.png');
+  background-image: url('/Images/Newbie/Courses/skilled-elearning.png');
 }
 
 .rating-component:hover {
-  background-image: url(./Images/rating-component.png);
+  background-image: url(/Images/Newbie/Courses/rating-component.png);
 }
 
 .qr-code:hover {
-  background-image: url(./Images/qr-code-component.png);
+  background-image: url(/Images/Newbie/Courses/qr-code-component.png);
 }
 
 .nft-preview:hover {
-  background-image: url(./Images/nft-card.png);
+  background-image: url(/Images/Newbie/Courses/nft-card.png);
 }
 
 .equalizer-landing:hover {
-  background-image: url(./Images/equalizer-page.png);
+  background-image: url(/Images/Newbie/Courses/equalizer-page.png);
 }
 
 .order-summary:hover {
-  background-image: url(./Images/order-summary.png);
+  background-image: url(/Images/Newbie/Courses/order-summary.png);
 }
 
 .stats-preview:hover {
-  background-image: url('./Images/stats-preview-card.png');
+  background-image: url('/Images/Newbie/Courses/stats-preview-card.png');
 }
 
 .meet-landing:hover {
-  background-image: url('./Images/meet-page.png');
+  background-image: url('/Images/Newbie/Courses/meet-page.png');
 }
 
 .last-div {
@@ -221,28 +222,6 @@ button:hover {
   background-color: white;
   border: 2px solid rgb(106, 190, 205);
   color: rgb(106, 190, 205);
-  padding: 5%;
-}
-
-.junior:hover {
-  background-color: white;
-  border: 2px solid rgb(170, 215, 66);
-  color: rgb(170, 215, 66);
-  padding: 5%;
-  cursor: pointer;
-}
-
-.inter:hover {
-  background-color: white;
-  border: 2px solid rgb(241, 182, 4);
-  color: rgb(241, 182, 4);
-  padding: 5%;
-}
-
-.advanced:hover {
-  background-color: white;
-  border: 2px solid rgb(244, 137, 37);
-  color: rgb(244, 137, 37);
   padding: 5%;
 }
 

@@ -76,76 +76,8 @@ button {
 }
 
 button:hover {
-  font-size: 0;
-  background-color: white;
-  background-position: center;
-  background-size: cover;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.438);
-  color: rgb(0, 81, 95);
-  padding: 5%;
   cursor: pointer;
-  transition: 0.8s;
-}
-
-.recipe:hover {
-  background-image: url('/Images/Newbie/Courses/recipe.jpeg');
-}
-
-.social:hover {
-  background-image: url('/Images/Newbie/Courses/Profile-link.png');
-  background-position: center;
-}
-
-.blog:hover {
-  background-image: url('/Images/Newbie/Courses/Blog-preview.png');
-}
-
-.faq:hover {
-  background-image: url('/Images/Newbie/Courses/faq.png');
-}
-
-.workit:hover {
-  background-image: url('/Images/Newbie/Courses/workit.png');
-}
-
-.results:hover {
-  background-image: url('/Images/Newbie/Courses/results.png');
-}
-
-.product-preview:hover {
-  background-image: url('/Images/Newbie/Courses/perfume1.jpg');
-}
-
-.skilled-elearning:hover {
-  background-image: url('/Images/Newbie/Courses/skilled-elearning.png');
-}
-
-.rating-component:hover {
-  background-image: url(/Images/Newbie/Courses/rating-component.png);
-}
-
-.qr-code:hover {
-  background-image: url(/Images/Newbie/Courses/qr-code-component.png);
-}
-
-.nft-preview:hover {
-  background-image: url(/Images/Newbie/Courses/nft-card.png);
-}
-
-.equalizer-landing:hover {
-  background-image: url(/Images/Newbie/Courses/equalizer-page.png);
-}
-
-.order-summary:hover {
-  background-image: url(/Images/Newbie/Courses/order-summary.png);
-}
-
-.stats-preview:hover {
-  background-image: url('/Images/Newbie/Courses/stats-preview-card.png');
-}
-
-.meet-landing:hover {
-  background-image: url('/Images/Newbie/Courses/meet-page.png');
+  background-color: rgb(23, 105, 119);
 }
 
 .last-div {

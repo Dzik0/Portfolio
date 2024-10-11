@@ -15,7 +15,7 @@ let displayedHTML = '';
 //Looping through all challenges data
 challenge.forEach((challenge) => {
   displayedHTML += `
-    <button class="${challenge.css} js-btn id-${challenge.id}" data-page-id="${challenge.css}">${challenge.name}</button>
+    <button class="${challenge.css} js-btn id-${challenge.id}" data-page-id="${challenge.css}">${challenge.number} - ${challenge.name}</button>
   `
 });
 

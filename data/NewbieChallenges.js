@@ -26,7 +26,7 @@ export const challenge = [
   {
     name: 'Workit landing page',
     id: 'workit',
-    pageLink: './Newbie/workit-landing-page',
+    pageLink: './Newbie/Workit-landing-page',
     css: 'workit'
   },
   {

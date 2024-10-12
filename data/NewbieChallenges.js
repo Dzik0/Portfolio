@@ -1,6 +1,6 @@
 export const challenge = [
   {
-    name: 'Recipe Main Page',
+    name: 'Recipe main page',
     number: 1,
     id: 'recipe',
     pageLink: './Newbie/Recipe-Page',
@@ -42,7 +42,7 @@ export const challenge = [
     css: 'results'
   },
   {
-    name: 'Product Preview Card',
+    name: 'Product preview card',
     number: 7,
     id: 'product-preview',
     pageLink: './Newbie/Product-Preview-Card',
@@ -56,59 +56,59 @@ export const challenge = [
     css: 'skilled-elearning'
   },
   {
-    name: 'Rating Component',
+    name: 'Rating component',
     number: 9,
     id: 'rating-component',
     pageLink: './Newbie/rating-component',
     css: 'rating-component'
   },
   {
-    name: 'Qr Code Component',
+    name: 'Qr code component',
     number: 10,
     id: 'qr-code',
     pageLink: './Newbie/qr-code-component',
     css: 'qr-code'
   },
   {
-    name: 'NFT Preview card',
+    name: 'NFT preview card',
     number: 11,
     id: 'nft-preview',
     pageLink: './Newbie/nft-preview-card',
     css: 'nft-preview'
   },
   {
-    name: 'Equalizer Landing Page',
+    name: 'Equalizer landing page',
     number: 12,
     id: 'equalizer-landing',
     pageLink: './Newbie/equalizer-landing-page',
     css: 'equalizer-landing'
   },
   {
-    name: 'Order Summary Component',
+    name: 'Order summary component',
     number: 13,
     id: 'order-summary',
     pageLink: './Newbie/order-summary-component',
     css: 'order-summary'
   },
   {
-    name: 'Stats Preview Card',
+    name: 'Stats preview card',
     number: 14,
     id: 'stats-preview',
     pageLink: './Newbie/stats-preview-card',
     css: 'stats-preview'
   },
   {
-    name: 'Meet Landing Page',
+    name: 'Meet landing page',
     number: 15,
     id: 'meet-landing',
     pageLink: './Newbie/meet-landing-page',
     css: 'meet-landing'
   },
   {
-    name: 'Coming Soon',
-    number: '',
-    id: '',
-    pageLink: '#',
-    css: ''
+    name: 'Column car preview',
+    number: 16,
+    id: 'column-car',
+    pageLink: './Newbie/column-car-preview',
+    css: 'column-car'
   },
 ];

@@ -115,7 +115,7 @@ export const challenge = [
     name: 'Pod request landing page',
     number: 17,
     id: 'pod-request',
-    pageLink: './Newbie/pod-request-landing-page',
+    pageLink: './Newbie/Pod-request-landing-page',
     css: 'pod-request'
   },
 ];

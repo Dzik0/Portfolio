@@ -1,0 +1,405 @@
+/* TEXT STYLES */
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* STYLES */
+:root {
+  --green: #56e6af;
+  --lightBlue: #2b334a;
+  --darkBlue: #121726;
+  --grey: #5b678b;
+  --lightGrey:#c2cbe5; 
+
+  --chivo: "Chivo";
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+input, button {
+  font-family: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  font-family: var(--chivo);
+  background-color: var(--darkBlue);
+  position: relative;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.main-container {
+  max-width: 375px;
+  position: relative;
+}
+
+.image-container {
+  position: absolute;
+  top: 0;
+  background-size: cover;
+  opacity: 0.1;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.mobile-image {
+  display: block;
+}
+
+.tablet-image {
+  display: none;
+}
+
+.pc-image {
+  display: none;
+}
+
+.dot {
+  display: none;
+}
+
+.info-container {
+  margin-top: 75px;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.top-logo {
+  display: flex;
+  justify-content: center;
+  padding-top: 110px;
+  margin-bottom: -50px;
+}
+
+.title {
+  color: white;
+  font-weight: 100;
+  margin-bottom: 24px;
+}
+
+.title span {
+  color: var(--green);
+}
+
+.info {
+  color: var(--lightGrey);
+  font-weight: 100;
+  margin-bottom: 30px;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.spotify-logo {
+  width: 20%;
+  height: 10%;
+}
+
+.apple-logo {
+  width: 15%;
+  height: 20%;
+}
+
+.google-logo {
+  width: 30%;
+  height: 10%;
+}
+
+.pocket-logo {
+  width: 20%;
+  height: 10%;
+}
+
+.form-style {
+  width: 100%;
+  height: 51px;
+  font-weight: 800;
+  font-size: 0.9rem;
+  border-radius: 40px;
+  border: none;
+}
+
+.input {
+  background-color: var(--lightBlue);
+  outline: none;
+  padding-left: 30px;
+  margin-bottom: 10px;
+  color: white;
+  font-weight: 300;
+}
+
+button {
+  background-color: var(--green);
+}
+
+button:hover {
+  background-color: #a3fad9;
+  cursor: pointer;
+}
+
+.error {
+  border: 2px solid red;
+}
+
+.message {
+  display: none;
+  position: absolute;
+  color: red;
+  font-size: 0.8rem;
+  bottom: -20px;
+  left: 30px;
+}
+
+.shown {
+  display: block;
+}
+
+.present1 {
+  font-size: 2rem;
+  line-height: 120%;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+}
+
+.present2 {
+  font-size: 0.9rem;
+  line-height: 150%;
+  letter-spacing: 0px;
+}
+
+.present3 {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 200%;
+  letter-spacing: 0px;
+}
+
+
+@media (min-width: 768px) {
+
+  body {
+    height: 100vh;
+  }
+
+  .mobile-image {
+    display: none;
+  }
+
+  .tablet-image {
+    display: block;
+  }
+
+  .pc-image {
+    display: none;
+  }
+
+  .main-container {
+    max-width: 774px;
+    padding-bottom: 80px;
+    overflow: hidden;
+  }
+
+  .image-container {
+    opacity: 1;
+    right: 0;
+  }
+
+  .top-logo {
+    text-align: left;
+    justify-content: left;
+    align-items: normal;
+    margin-bottom: 100px;
+    padding-left: 30px;
+    padding-top: 120px;
+  }
+
+  .info-container {
+    text-align: left;
+    justify-content: left;
+    align-items: normal;
+    width: 74%;
+    background-color: var(--darkBlue);
+    padding-top: 60px;
+    padding-bottom: 120px;
+  }
+
+  .title {
+    font-size: 2.5rem;
+    padding-right: 100px;
+  }
+
+  .info {
+    font-size: 1.1rem;
+    padding-right: 80px;
+    margin-bottom: 40px;
+  }
+
+  .form-container {
+    position: relative;
+    width: 85%;
+  }
+
+  .input {
+    position: relative;
+    margin-bottom: 0;
+  }
+
+  .button {
+    position: absolute;
+    height: 45px;
+    right: 3px;
+    bottom: 3px;
+    width: 40%;
+  }
+
+  .logo-container {
+    position: absolute;
+    bottom: 0;
+    padding-right: 0;
+    width: 90%;
+  }
+
+  .dot {
+    display: block;
+    position: absolute;
+    bottom: 60px;
+    right: -100px;
+  }
+
+}
+
+
+@media (min-width: 1440px) {
+
+  body {
+    height: 100vh;
+  }
+
+  .tablet-image {
+    display: none;
+  }
+
+  .pc-image {
+    display: block;
+  }
+
+  .main-container {
+    max-width: 1440px;
+    margin: auto;
+  }
+
+  .image-container {
+    top: 0;
+  }
+
+  .logo-img {
+    padding-left: 8rem;
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .top-logo {
+    text-align: left;
+    justify-content: left;
+    align-items: normal;
+    margin-bottom: 10px;
+    padding-left: 30px;
+    padding-top: 0px;
+    margin-top: 0;
+  }
+
+  .info-container {
+    text-align: left;
+    justify-content: left;
+    align-items: normal;
+    width: 52%;
+    background-color: var(--darkBlue);
+    margin-top: 100px;
+    padding-top: 60px;
+    padding-bottom: 120px;
+    margin-left: 8rem;
+  }
+
+  .title {
+    font-size: 3rem;
+    padding-right: 50px;
+  }
+
+  .info {
+    font-size: 1.3rem;
+    padding-right: 170px;
+    margin-bottom: 40px;
+  }
+
+  .form-container {
+    position: relative;
+    width: 70%;
+    margin-top: 10px;
+  }
+
+  .input {
+    position: relative;
+    margin-bottom: 0;
+  }
+
+  .button {
+    position: absolute;
+    height: 45px;
+    right: 3px;
+    bottom: 3px;
+    width: 40%;
+  }
+  
+  .logo-container {
+    position: absolute;
+    bottom: 0;
+    padding-right: 0;
+    width: 65%;
+  }
+
+  .dot {
+    display: block;
+    position: absolute;
+    bottom: 60px;
+    right: -30px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

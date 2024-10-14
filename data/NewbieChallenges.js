@@ -111,4 +111,11 @@ export const challenge = [
     pageLink: './Newbie/column-car-preview',
     css: 'column-car'
   },
+  {
+    name: 'Pod request landing page',
+    number: 17,
+    id: 'pod-request',
+    pageLink: './Newbie/pod-request-landing-page',
+    css: 'pod-request'
+  },
 ];

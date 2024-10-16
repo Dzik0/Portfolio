@@ -118,4 +118,11 @@ export const challenge = [
     pageLink: './Newbie/Pod-request-landing-page',
     css: 'pod-request'
   },
+  {
+    name: 'Profile card component',
+    number: 18,
+    id: 'profile-card',
+    pageLink: './Newbie/Profile-card-component',
+    css: 'profile-card'
+  },
 ];

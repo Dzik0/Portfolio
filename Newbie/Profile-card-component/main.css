@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
+:root {
+/* COLORS */
+--darkCyan: hsl(185, 75%, 39%);
+--veryDarkBlue: hsl(229, 23%, 23%);
+--greyishBlue: hsl(227, 10%, 46%);
+
+/* FONTS */
+--mainFont: "Kumbh Sans";
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: var(--mainFont);
+  background-color: var(--darkCyan);
+  display: grid;
+  place-items: center;
+  padding: 1.2rem;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+main {
+  max-width: 450px;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.top-side {
+  position: relative;
+}
+
+.bubbles {
+  object-fit: cover;
+}
+
+.picture-container {
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px;
+  background-color: white;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile-pic {
+  border-radius: 50%;
+}
+
+.name-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 3.7rem;
+  gap: 0.6rem;
+  margin-bottom: 0.4rem;
+}
+
+h1 {
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.age {
+  color: var(--greyishBlue);
+  font-weight: 400;
+  font-size: 1.15rem;
+}
+
+.city {
+  display: flex;
+  justify-content: center;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--greyishBlue);
+  margin-bottom: 1.7rem;
+}
+
+.stats-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-top: 1px solid hsla(227, 10%, 46%, 0.137);
+  padding-top: 1.3rem;
+  justify-content: space-evenly;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.pair-container {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  gap: 0.2rem;
+}
+
+.stat-name {
+  font-size: 0.625rem;
+  letter-spacing: 0.1rem;
+  font-weight: 500;
+  color: var(--greyishBlue);
+}
+
+.stat-number {
+  color: var(--veryDarkBlue);
+  font-weight: 800;
+}

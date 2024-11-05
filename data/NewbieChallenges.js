@@ -125,4 +125,11 @@ export const challenge = [
     pageLink: './Newbie/Profile-card-component',
     css: 'profile-card'
   },
+  {
+    name: 'Social proof section',
+    number: 19,
+    id: 'social-proof',
+    pageLink: './Newbie/social-proof-section',
+    css: 'social-proof'
+  },
 ];

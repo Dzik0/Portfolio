@@ -52,7 +52,6 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .main-container {
   padding-top: 2rem;
-  padding-bottom: 4rem;
   max-width: 1200px;
 
 }
@@ -186,6 +185,10 @@ h1 {
     padding-left: 1rem;
   }
 
+  .comment-container {
+    height: 30vh;
+  }
+
   .bottom-section {
       flex-direction: row;
       gap: 2rem;
@@ -198,7 +201,6 @@ h1 {
   .bottom-section > *:nth-child(3) {
     margin-top: 2rem;
   }
-
   
 }
 
@@ -216,6 +218,11 @@ h1 {
   
   .right-side-top > *:nth-child(1) {
     margin-right: 4rem;
+  }
+
+  .comment-container {
+    height: 27vh;
+    display: grid;
   }
 
 }

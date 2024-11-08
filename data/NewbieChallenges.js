@@ -132,4 +132,11 @@ export const challenge = [
     pageLink: './Newbie/social-proof-section',
     css: 'social-proof'
   },
+  {
+    name: 'Article preview component',
+    number: 20,
+    id: 'article-preview',
+    pageLink: './Newbie/article-preview-component',
+    css: 'article-preview'
+  },
 ];

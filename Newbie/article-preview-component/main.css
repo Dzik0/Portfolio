@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+:root {
+  /* FONTS */
+  --mainFont: Manrope;
+  --classFont: 500;
+  --boldFont: 700;
+  --fontSizeNormal: 0.85rem;
+  --fontSizeBig: 1rem;
+
+  /* COLORS */
+  --darkBlue: hsl(217, 19%, 35%);
+  --desaturatedBlue: hsl(214, 17%, 51%);
+  --greyishBlue: hsla(212, 23%, 69%, 0.212);
+  --lightBlue: hsl(210, 46%, 95%);
+  
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--lightBlue);
+  display: grid;
+  place-items: center;
+  padding: 1.4rem;
+  font-family: var(--mainFont);
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+.main-container {
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 1rem;
+  position: relative;
+}
+
+.img-container {
+  overflow: hidden;
+  border-radius: 1rem 1rem 0rem 0rem;
+}
+
+.main-photo {
+  height: 220px;
+  object-position: top;
+  object-fit: cover;
+}
+
+.second-container {
+  padding: 2rem;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.title {
+  font-size: var(--fontSizeBig);
+  line-height: 1.6;
+  font-weight: 600;
+  color: var(--darkBlue);
+}
+
+.info {
+  font-size: var(--fontSizeNormal);
+  color: var(--desaturatedBlue);
+  line-height: 1.5;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.user-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: row;
+  gap: 1.2rem;
+}
+
+.profile-pic {
+  width: 2.5rem;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 0.8rem;
+}
+
+.user-name {
+  color: var(--darkBlue);
+  font-weight: 600;
+}
+
+.user-date {
+  color: var(--desaturatedBlue);
+  font-weight: 500;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+}
+
+.share-btn {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--greyishBlue);
+  border: none;
+}
+
+.darkBlue-btn {
+  background-color: var(--darkBlue);
+}
+
+.share-pic {
+  width: 50%;
+}
+
+.share-container {
+  position: absolute;
+  bottom: 0;
+  height: 4.5rem;
+  width: 100%;
+  background-color: var(--darkBlue);
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+  gap: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.share-name {
+  color: var(--desaturatedBlue);
+  letter-spacing: 0.3rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.titles {
+  width: 1.5rem;
+}
+
+.square {
+  display: none;
+}
+
+@media (min-width: 970px) {
+  .main-container {
+    max-width: 730px;
+    flex-direction: row;
+  }
+
+  .img-container {
+    flex-basis: 40%;
+    border-radius: 1rem 0rem 0rem 1rem;
+  }
+
+  .main-photo {
+    height: 100%;
+    object-position: left;
+  }
+
+
+  .second-container {
+    flex: 1;
+  }
+
+  .title {
+    font-size: 1.3rem;
+  }
+
+  .second-container {
+    padding-bottom: 2.5rem;
+  }
+
+  .profile-pic {
+    width: 2.8rem;
+  }
+
+  .user-info {
+    font-size: 0.9rem;
+  }
+
+  .share-btn {
+    width: 2.3rem;
+    height: 2.3rem;
+  }
+
+  .share-container {
+    width: 32%;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+    right: -5rem;
+    padding: 0;
+    border-radius: 0.5rem;
+    bottom: 6.5rem;
+  }
+
+  .share-name {
+    color: var(--desaturatedBlue);
+    letter-spacing: 0.3rem;
+    font-weight: 600;
+    font-size: 0.8rem;
+  }
+  
+  .titles {
+    width: 1.2rem;
+  }
+
+  .square {
+    display: block;
+    position: absolute;
+    width: 1.3rem;
+    height: 1.3rem;
+    background-color: var(--darkBlue);
+    left: 40%;
+    transform: translate(-50%, 0);
+    bottom: -0.5rem;
+    transform: rotate(45deg);
+  }
+}

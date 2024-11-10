@@ -139,4 +139,11 @@ export const challenge = [
     pageLink: './Newbie/article-preview-component',
     css: 'article-preview'
   },
+  {
+    name: 'Four card feature',
+    number: 21,
+    id: 'four-card-feature',
+    pageLink: './Newbie/four-card-feature',
+    css: 'four-card-feature'
+  },
 ];

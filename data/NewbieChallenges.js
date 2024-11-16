@@ -146,4 +146,11 @@ export const challenge = [
     pageLink: './Newbie/four-card-feature',
     css: 'four-card-feature'
   },
+  {
+    name: 'Base apparel page',
+    number: 22,
+    id: 'base-apparel-page',
+    pageLink: './Newbie/base-apparel-page',
+    css: 'base-apparel-page'
+  },
 ];

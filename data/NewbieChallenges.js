@@ -153,4 +153,11 @@ export const challenge = [
     pageLink: './Newbie/base-apparel-page',
     css: 'base-apparel-page'
   },
+  {
+    name: 'Intro with sign up',
+    number: 23,
+    id: 'intro-with-signup',
+    pageLink: './Newbie/intro-with-signup',
+    css: 'intro-with-signup'
+  },
 ];

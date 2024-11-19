@@ -160,4 +160,11 @@ export const challenge = [
     pageLink: './Newbie/intro-with-signup',
     css: 'intro-with-signup'
   },
+  {
+    name: 'Single price grid',
+    number: 24,
+    id: 'single-price-grid',
+    pageLink: './Newbie/single-price-grid',
+    css: 'single-price-grid'
+  },
 ];

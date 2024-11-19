@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+
+:root {
+  /* FONTS */
+  --mainFont: 'Karla';
+
+  /* COLORS */
+  --darkGreen: #2AB3B1;
+  --lime: #C0DF33;
+  --grey: #9AA7BE;
+  --greyBG: #b5c4df63;
+  --white: #FFFFFF;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: var(--mainFont);
+  display: grid;
+  place-items: center;
+  background-color: var(--greyBG);
+  padding: 4rem 2rem;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+.main-container {
+  display: grid;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  grid-template-columns: 1fr;
+  max-width: 700px;
+}
+
+.top {
+  background-color: var(--white);
+  padding: 2rem 1.5rem;
+}
+
+h1 {
+  font-size: 1.25rem;
+  color: var(--darkGreen);
+  margin-bottom: 1rem;
+}
+
+h2 {
+  color: var(--lime);
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+  line-height: 1.3;
+}
+
+.top-paragraph {
+  color: var(--grey);
+  line-height: 1.6;
+  font-size: 0.85rem;
+}
+
+.left {
+  background-color: var(--darkGreen);
+  padding: 1.5rem;
+}
+
+h3 {
+  color: var(--white);
+  font-size: 1.1rem;
+  margin-bottom: 1.2rem;
+}
+
+.price-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.price {
+  color: var(--white);
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.month {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.418);
+  display: grid;
+  align-items: center;
+}
+
+.left-paragraph {
+  color: var(--white);
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+
+button {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: var(--lime);
+  border: none;
+  border-radius: 0.4rem;
+  font-weight: 700;
+  color: white;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.096);
+}
+
+.right {
+  background-color: hsla(179, 62%, 43%, 0.767);
+  padding: 1.5rem;
+}
+
+.right-paragraph {
+  display: grid;
+}
+
+.right-paragraph > * {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.74);
+}
+
+@media (min-width: 635px) {
+  .main-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.3rem
+  }
+
+  .top-paragraph {
+    font-size: 1rem;
+  }
+
+  .top {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding: 2.5rem;
+  }
+
+  .left, .right {
+    padding: 2.5rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+}

@@ -167,4 +167,11 @@ export const challenge = [
     pageLink: './Newbie/single-price-grid',
     css: 'single-price-grid'
   },
+  {
+    name: 'Ping coming soon page',
+    number: 25,
+    id: 'ping-soon-page',
+    pageLink: './Newbie/ping-soon-page',
+    css: 'ping-soon-page'
+  },
 ];

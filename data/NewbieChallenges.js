@@ -174,4 +174,11 @@ export const challenge = [
     pageLink: './Newbie/ping-soon-page',
     css: 'ping-soon-page'
   },
+  {
+    name: 'Huddle landing page',
+    number: 26,
+    id: 'huddle-landing-page',
+    pageLink: './Newbie/huddle-landing-page',
+    css: 'huddle-landing-page'
+  },
 ];

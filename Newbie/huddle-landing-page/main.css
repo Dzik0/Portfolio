@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+  /* FONTS */
+  --mainFont: "Open Sans", sans-serif;
+
+  /* COLORS */
+  --violet: hsl(257, 40%, 49%);
+  --softMagenta: hsl(300, 69%, 71%);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--violet);
+  font-family: var(--mainFont);
+  color: white;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+main {
+  background-image: url(images/bg-mobile.svg);
+  background-repeat: no-repeat;
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 2.5rem;
+}
+
+.top-logo {
+  width: 8rem;
+  margin-bottom: 3.7rem;
+}
+
+.middle {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+
+.info-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  width: 68%;
+  padding: 0.5rem;
+  border-radius: 2rem;
+  border: none;
+  color: var(--violet);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.301);
+}
+
+button:hover {
+  background-color: var(--softMagenta);
+  cursor: pointer;
+  color: white;
+}
+
+.social-wrapper {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+a:hover {
+  border: 1px solid var(--softMagenta);
+
+  .fa {
+    color: var(--softMagenta)
+  }
+}
+
+.fa {
+  color: white;
+}
+
+
+@media (min-width: 580px) {
+  main {
+    max-width: 684px;
+    background-image: url(images/bg-desktop.svg);
+    background-size: cover;
+  }
+
+  button {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1100px) {
+
+  body {
+    display: grid;
+    place-items: center;
+  }
+
+  .top-logo {
+    width: 12rem;
+  }
+  main {
+    max-width: 1440px;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    background-size: auto;
+  }
+
+  .middle {
+    flex-direction: row;
+  }
+
+  .illu-wrapper {
+    flex-basis: 50%;
+  }
+
+  .illustration {
+    width: 100%;
+  }
+
+  .info-wrapper {
+    margin-top: 2.3rem;
+    flex: 1;
+    text-align: left;
+    padding-right: 4rem;
+    gap: 2rem;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+
+  .button-wrapper {
+    justify-content: left;
+  }
+
+  button {
+    width: 35%;
+    padding: 0.8rem;
+  }
+
+  .social-wrapper {
+    justify-content: end;
+  }
+}
+
+
+

@@ -2,11 +2,7 @@ import { courses } from "../data/Courses.js";
 
 //Function to transfer you to correct challenge level page
 function goPage (page) {
-  if (page === 'Newbie') {
-    window.location.href = 'newbie.html';
-  } else {
-    alert('Coming soon!');
-  }
+    window.location.href = `${page}.html`;
 }
 
 //CONTAINS ALL ELEMENTS
@@ -28,6 +24,7 @@ document.querySelector('.btn-container-js')
 document.querySelectorAll('.btn-js').forEach((button) => {
   button.addEventListener( 'click', () => {
     const pageName = button.dataset.pageName;
+    /* console.log(pageName); */
     goPage(pageName);
   });
 });

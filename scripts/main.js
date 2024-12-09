@@ -11,7 +11,7 @@ let coursesDisplayed = '';
 //LOOPS THROU ALL COURSES
 courses.forEach((course) => {
   coursesDisplayed += `
-    <button class="${course.class} btn-js course-${course.id}" data-page-name="${course.name}">${course.name}</button>
+    <button class="${course.class} btn-js course-${course.id}" data-page-name="${course.class}">${course.name}</button>
   `
 });
 
